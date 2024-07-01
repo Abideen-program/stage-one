@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+.container {
+  border: 7px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.details-container {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first,
+.second {
+  height: 100%;
+}
+
+.first {
+  border: 3px solid green;
+  flex-basis: 50%;
+}
+
+.second {
+  border: 3px solid red;
+  flex-basis: 50%;
+}
