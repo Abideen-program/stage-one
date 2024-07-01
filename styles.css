@@ -10,31 +10,98 @@ body {
 }
 
 .container {
-  border: 7px solid black;
   height: 100vh;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   scroll-behavior: smooth;
+  scrollbar-width: 1px;
 }
 
 .details-container {
   height: inherit;
   display: flex;
   justify-content: space-between;
+   border: 5px solid black;
 }
 
-.first,
-.second {
+.right,
+.left {
+  height: 100%;
+  /* flex-basis: 50%; */
+}
+
+.right {
+  border-left: 3px solid black;
+  flex-basis: 45%;
+}
+
+.left {
+  border-right: 2px solid black;
+ flex-basis: 55%;
+}
+
+.colours-container,
+.name-container {
+  height: 50%;
+  display: flex;
+}
+
+.colours-container {
+  border-bottom: 3px solid black;
+}
+
+.name-container {
+  border-top: 2px solid black;
+}
+
+.name-container {
+  height: 50%;
+  /* border: 2px solid black; */
+  display: flex;
+}
+
+.blue {
+  height: 100%;
+  border-right: 3px solid black;
+  background: #007ff5;
+  flex-basis: 50%;
+}
+
+.other-colours {
+  height: 100%;
+  border-left: 2px solid black;
+  flex-basis: 50%;
+}
+
+.other-colours {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.white {
+  border-right: 3px solid black;
+}
+
+.yellow {
+  background: #e8c305;
+  border-left: 2px solid black;
+}
+
+.red {
+  border-top: 5px solid black;
+  background: #e83e2e;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.img-container {
+  width: 100%;
   height: 100%;
 }
 
-.first {
-  border: 3px solid green;
-  flex-basis: 50%;
-}
-
-.second {
-  border: 3px solid red;
-  flex-basis: 50%;
+.img {
+  width: 100%;
+  height: 100%;
 }
