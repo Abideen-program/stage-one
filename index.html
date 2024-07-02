@@ -26,7 +26,7 @@
             </div>
           </div>
           <div class="name-container">
-            <div class="slack-name">
+            <div id="slackName" class="slack-name" data-testid>
               <p class="first-name">a<span class="">b</span>ideen</p>
               <p class="last-name">
                 ol<span class="third">a</span>fimih<span class="nine">a</span>n
@@ -34,17 +34,17 @@
             </div>
 
             <div class="slack-details">
-              <div class="email">
+              <div id="email" class="email" data-testid>
                 <p class="email-title">Slack Email:</p>
                 <p class="email-text">olafimihana@gmail.com</p>
               </div>
 
-              <div class="email">
+              <div id="day" class="email" data-testid>
                 <p class="email-title">Day:</p>
                 <p class="email-text">Monday</p>
               </div>
 
-              <div class="email">
+              <div id="time" class="email" data-testid>
                 <p class="email-title">Time:</p>
                 <p class="email-text">2:00 PM</p>
               </div>
@@ -53,7 +53,13 @@
         </div>
         <div class="right">
           <div class="img-container">
-            <img src="./image/abideen.jpg" alt="" class="img" />
+            <img
+              src="./image/abideen.jpg"
+              id="picture"
+              alt=""
+              class="img"
+              data-testid
+            />
           </div>
         </div>
       </div>
