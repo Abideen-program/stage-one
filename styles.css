@@ -112,6 +112,7 @@ body {
 .img {
   max-width: 100%;
   max-height: auto;
+  display: block;
 }
 
 .slack-name {
@@ -240,6 +241,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow-y: scroll;
+  width: 100%;
 }
 
 .quote {
@@ -288,6 +290,7 @@ body {
   flex-direction: column;
   font-family: "Roboto", sans-serif;
   margin: 2px 0;
+  width: 100%;
 }
 
 .advert {
@@ -313,4 +316,78 @@ body {
 
 .advert p {
   margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .slack-name {
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+  }
+
+  .quote {
+    font-size: 90px;
+    line-height: 85px;
+  }
+
+  .overview {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .first_month p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .colours-container {
+    display: none;
+  }
+
+  .name-container {
+    height: 100%;
+  }
+
+  .name-container {
+    padding: 0 20px;
+  }
+
+  .slack-details {
+    padding: 2px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .slack-details .email {
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 4px;
+  }
+
+  .year_text {
+    font-size: 30px;
+  }
+
+  .goal_section-second {
+    display: block;
+    padding: 20px;
+  }
+
+  .quote {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  .overview {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .first_month,
+  .conclusion,
+  .advert {
+    width: 80%;
+  }
 }
