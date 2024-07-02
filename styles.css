@@ -65,6 +65,7 @@ body {
 .name-container {
   height: 50%;
   display: flex;
+  background: #f5f5f5;
 }
 
 .blue {
@@ -88,6 +89,7 @@ body {
 
 .white {
   border-right: 3px solid black;
+  background: #f5f5f5;
 }
 
 .yellow {
@@ -193,12 +195,14 @@ body {
 .goal_section-first {
   flex-basis: 30%;
   border-right: 3px solid black;
+  background: #f5f5f5;
 }
 
 .goal_section-second {
   flex-basis: 70%;
   border-left: 2px solid black;
   padding: 40px 0;
+  background: #f5f5f5;
 }
 
 .goal_title {
@@ -246,7 +250,6 @@ body {
   font-size: 100px;
   line-height: 85px;
   width: 600px;
-  border: 1px solid red;
 }
 
 .every {
@@ -267,5 +270,47 @@ body {
 
 .goals {
   width: 600px;
-  border: 1px solid red;
+  margin-top: 40px;
+}
+
+.overview {
+  font-size: 32px;
+  color: #e83e2e;
+  -webkit-text-stroke: 1px black;
+  font-family: "Ga Maamli", sans-serif;
+  margin-bottom: 10px;
+}
+
+.first_month,
+.conclusion,
+.advert {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 2px 0;
+}
+
+.advert{
+    font-size: 14px;
+}
+
+.first_month p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+.container_list {
+  padding-left: 40px;
+}
+
+.conclusion p {
+  margin-top: 20px;
+}
+
+.advert p {
+  margin-top: 10px;
 }
