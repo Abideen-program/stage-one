@@ -188,6 +188,7 @@ body {
   height: 100vh;
   border: 5px solid black;
   display: flex;
+  flex-direction: row;
 }
 
 .goal_section-first,
@@ -349,6 +350,7 @@ body {
   }
 
   .name-container {
+    border-top: 0px;
     height: 100%;
     padding: 0 20px;
   }
@@ -398,6 +400,7 @@ body {
 
   .name-container {
     padding: 5px;
+    border-top: 5px solid black;
   }
 
   .left {
@@ -431,6 +434,71 @@ body {
     padding: 5px;
     border-radius: 10px;
     margin-right: 4px;
+  }
+
+  .goal_section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .goal_title {
+    height: 70%;
+    display: flex;
+    flex-basis: 100%;
+    border-bottom: 3px solid black;
+  }
+
+  .goal_title_colour-container {
+    height: 30%;
+    flex-basis: 100%;
+    display: flex;
+    border-top: 3px solid black;
+    border-bottom: 5px solid black;
+  }
+
+  .year {
+    font-size: 150px;
+  }
+
+  .year_text {
+    font-size: 40px;
+  }
+
+  .goal_section-second {
+    display: block;
+    width: 100%;
+  }
+
+  .quote {
+    font-size: 50px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .goals {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .overview {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .first_month,
+  .conclusion,
+  .advert {
+    width: 100%;
+  }
+
+  .first_month p {
+    font-size: 16px;
+  }
+
+  .container_list {
+    padding-left: 30px;
   }
 }
 
