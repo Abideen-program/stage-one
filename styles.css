@@ -19,8 +19,9 @@ body {
 }
 
 .details-container {
-  height: inherit;
+  height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   border-right: 5px solid black;
   border-right: 5px solid black;
@@ -36,12 +37,14 @@ body {
 .right {
   border-left: 3px solid black;
   flex-basis: 45%;
+  order: 2;
 }
 
 .left {
   border-right: 2px solid black;
   border-left: 5px solid black;
   flex-basis: 55%;
+  order: 1;
 }
 
 .colours-container,
@@ -63,7 +66,6 @@ body {
 }
 
 .name-container {
-  height: 50%;
   display: flex;
   background: #f5f5f5;
 }
@@ -111,7 +113,7 @@ body {
 
 .img {
   max-width: 100%;
-  max-height: auto;
+  max-height: 100%;
   display: block;
 }
 
@@ -183,7 +185,7 @@ body {
 }
 
 .goal_section {
-  min-height: 100vh;
+  height: 100vh;
   border: 5px solid black;
   display: flex;
 }
@@ -348,9 +350,6 @@ body {
 
   .name-container {
     height: 100%;
-  }
-
-  .name-container {
     padding: 0 20px;
   }
 
@@ -389,5 +388,75 @@ body {
   .conclusion,
   .advert {
     width: 80%;
+  }
+}
+
+@media (max-width: 426px) {
+  .details-container {
+    flex-direction: column;
+  }
+
+  .name-container {
+    padding: 5px;
+  }
+
+  .left {
+    order: 2;
+  }
+
+  .right {
+    order: 1;
+    height: 50%;
+    background: #eaddcd;
+    border-left: 5px solid black;
+  }
+
+  .slack-name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 10px;
+    margin-bottom: 0px;
+  }
+
+  .slack-details {
+    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+
+  .slack-details .email {
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .name-container {
+    padding: 5px;
+  }
+
+  .right {
+    border-bottom: 3px solid black;
+    overflow-y: scroll;
+  }
+
+  .slack-name {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .slack-details {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .slack-details .email {
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 4px;
   }
 }
