@@ -393,7 +393,7 @@ body {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 430px) {
   .details-container {
     flex-direction: column;
   }
