@@ -1,17 +1,16 @@
 const slackName = document.getElementById("slackName");
-slackName.dataset.testid = "slackDisplayName";
+slackName.dataset.testid = "Abideen Olafimihan";
 
 const currentTime = document.getElementById("time");
-currentTime.dataset.testid = "currentTimeUTC";
 
 const currentDay = document.getElementById("day");
-currentDay.dataset.testid = "currentDay";
+
 
 const slackEmail = document.getElementById("email");
-slackEmail.dataset.testid = "slackEmail";
+slackEmail.dataset.testid = "olafimihana@gmail.com";
 
 const slackPicture = document.getElementById("picture");
-slackPicture.dataset.testid = "slackProfilePicture";
+slackPicture.dataset.testid = "abideen.jpg";
 
 const currentDayOfWeek = document.getElementById("currentDay");
 const currentTimeOfDay = document.getElementById("currentTime");
@@ -32,7 +31,7 @@ const daysOfWeek = [
 
 const dayName = daysOfWeek[dayOfWeek];
 
-currentDayOfWeek.innerText = dayName;
+currentDay.dataset.testid = dayName;
 
 const getCurrentUTCTime = () => {
   const date = new Date();
@@ -40,6 +39,10 @@ const getCurrentUTCTime = () => {
   const minutes = date.getUTCMinutes();
   const seconds = date.getUTCSeconds();
   currentTimeOfDay.innerText = `${hours.toString().padStart(2, "0")}:${minutes
+    .toString()
+    .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+
+  currentTime.dataset.testid = `${hours.toString().padStart(2, "0")}:${minutes
     .toString()
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
